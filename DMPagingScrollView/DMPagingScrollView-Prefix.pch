@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DMPagingScrollView' target in the 'DMPagingScrollView' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
