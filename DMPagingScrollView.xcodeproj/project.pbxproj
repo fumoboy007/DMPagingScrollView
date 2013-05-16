@@ -7,37 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63302621744627400089E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4507C17442C2A00E75E72 /* UIKit.framework */; };
+		E63302631744627400089E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4506C17442BE400E75E72 /* Foundation.framework */; };
+		E63302641744627400089E36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4507E17442C2E00E75E72 /* CoreGraphics.framework */; };
+		E633026A1744627400089E36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63302681744627400089E36 /* InfoPlist.strings */; };
+		E633026C1744627400089E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E633026B1744627400089E36 /* main.m */; };
+		E63302701744627400089E36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E633026F1744627400089E36 /* AppDelegate.m */; };
+		E63302721744627400089E36 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E63302711744627400089E36 /* Default.png */; };
+		E63302741744627400089E36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E63302731744627400089E36 /* Default@2x.png */; };
+		E63302761744627400089E36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E63302751744627400089E36 /* Default-568h@2x.png */; };
+		E633027C1744628600089E36 /* libDMPagingScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4506917442BE400E75E72 /* libDMPagingScrollView.a */; };
+		E633027E174462F700089E36 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E633027D174462F700089E36 /* Storyboard.storyboard */; };
+		E63302811744636500089E36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63302801744636500089E36 /* ViewController.m */; };
 		E6B4506D17442BE400E75E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4506C17442BE400E75E72 /* Foundation.framework */; };
-		E6B4507217442BE400E75E72 /* DMPagingScrollView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6B4507117442BE400E75E72 /* DMPagingScrollView.h */; };
 		E6B4507417442BE400E75E72 /* DMPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B4507317442BE400E75E72 /* DMPagingScrollView.m */; };
+		E6B4507B17442C2400E75E72 /* DMPagingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B4507117442BE400E75E72 /* DMPagingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B4507D17442C2A00E75E72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4507C17442C2A00E75E72 /* UIKit.framework */; };
+		E6B4507F17442C2E00E75E72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B4507E17442C2E00E75E72 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E6B4506717442BE400E75E72 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				E6B4507217442BE400E75E72 /* DMPagingScrollView.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		E633027A1744628100089E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B4506117442BE400E75E72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B4506817442BE400E75E72;
+			remoteInfo = DMPagingScrollView;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E63302611744627400089E36 /* DMPagingScrollViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMPagingScrollViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63302671744627400089E36 /* DMPagingScrollViewTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMPagingScrollViewTest-Info.plist"; sourceTree = "<group>"; };
+		E63302691744627400089E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E633026B1744627400089E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E633026D1744627400089E36 /* DMPagingScrollViewTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMPagingScrollViewTest-Prefix.pch"; sourceTree = "<group>"; };
+		E633026E1744627400089E36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E633026F1744627400089E36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E63302711744627400089E36 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E63302731744627400089E36 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E63302751744627400089E36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E633027D174462F700089E36 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		E633027F1744636500089E36 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E63302801744636500089E36 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E6B4506917442BE400E75E72 /* libDMPagingScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDMPagingScrollView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B4506C17442BE400E75E72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6B4507017442BE400E75E72 /* DMPagingScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMPagingScrollView-Prefix.pch"; sourceTree = "<group>"; };
 		E6B4507117442BE400E75E72 /* DMPagingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMPagingScrollView.h; sourceTree = "<group>"; };
 		E6B4507317442BE400E75E72 /* DMPagingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMPagingScrollView.m; sourceTree = "<group>"; };
+		E6B4507C17442C2A00E75E72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6B4507E17442C2E00E75E72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E633025E1744627400089E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E633027C1744628600089E36 /* libDMPagingScrollView.a in Frameworks */,
+				E63302621744627400089E36 /* UIKit.framework in Frameworks */,
+				E63302631744627400089E36 /* Foundation.framework in Frameworks */,
+				E63302641744627400089E36 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6B4506617442BE400E75E72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B4507F17442C2E00E75E72 /* CoreGraphics.framework in Frameworks */,
+				E6B4507D17442C2A00E75E72 /* UIKit.framework in Frameworks */,
 				E6B4506D17442BE400E75E72 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,10 +84,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E63302651744627400089E36 /* DMPagingScrollViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				E633026E1744627400089E36 /* AppDelegate.h */,
+				E633026F1744627400089E36 /* AppDelegate.m */,
+				E633027D174462F700089E36 /* Storyboard.storyboard */,
+				E633027F1744636500089E36 /* ViewController.h */,
+				E63302801744636500089E36 /* ViewController.m */,
+				E63302661744627400089E36 /* Supporting Files */,
+			);
+			path = DMPagingScrollViewTest;
+			sourceTree = "<group>";
+		};
+		E63302661744627400089E36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63302671744627400089E36 /* DMPagingScrollViewTest-Info.plist */,
+				E63302681744627400089E36 /* InfoPlist.strings */,
+				E633026B1744627400089E36 /* main.m */,
+				E633026D1744627400089E36 /* DMPagingScrollViewTest-Prefix.pch */,
+				E63302711744627400089E36 /* Default.png */,
+				E63302731744627400089E36 /* Default@2x.png */,
+				E63302751744627400089E36 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E6B4506017442BE400E75E72 = {
 			isa = PBXGroup;
 			children = (
 				E6B4506E17442BE400E75E72 /* DMPagingScrollView */,
+				E63302651744627400089E36 /* DMPagingScrollViewTest */,
 				E6B4506B17442BE400E75E72 /* Frameworks */,
 				E6B4506A17442BE400E75E72 /* Products */,
 			);
@@ -58,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E6B4506917442BE400E75E72 /* libDMPagingScrollView.a */,
+				E63302611744627400089E36 /* DMPagingScrollViewTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +133,8 @@
 		E6B4506B17442BE400E75E72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6B4507E17442C2E00E75E72 /* CoreGraphics.framework */,
+				E6B4507C17442C2A00E75E72 /* UIKit.framework */,
 				E6B4506C17442BE400E75E72 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -90,14 +160,43 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E6B4507A17442C2000E75E72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B4507B17442C2400E75E72 /* DMPagingScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		E63302601744627400089E36 /* DMPagingScrollViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63302791744627400089E36 /* Build configuration list for PBXNativeTarget "DMPagingScrollViewTest" */;
+			buildPhases = (
+				E633025D1744627400089E36 /* Sources */,
+				E633025E1744627400089E36 /* Frameworks */,
+				E633025F1744627400089E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E633027B1744628100089E36 /* PBXTargetDependency */,
+			);
+			name = DMPagingScrollViewTest;
+			productName = DMPagingScrollViewTest;
+			productReference = E63302611744627400089E36 /* DMPagingScrollViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E6B4506817442BE400E75E72 /* DMPagingScrollView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6B4507717442BE400E75E72 /* Build configuration list for PBXNativeTarget "DMPagingScrollView" */;
 			buildPhases = (
 				E6B4506517442BE400E75E72 /* Sources */,
 				E6B4506617442BE400E75E72 /* Frameworks */,
-				E6B4506717442BE400E75E72 /* CopyFiles */,
+				E6B4507A17442C2000E75E72 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -130,11 +229,37 @@
 			projectRoot = "";
 			targets = (
 				E6B4506817442BE400E75E72 /* DMPagingScrollView */,
+				E63302601744627400089E36 /* DMPagingScrollViewTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E633025F1744627400089E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E633026A1744627400089E36 /* InfoPlist.strings in Resources */,
+				E63302721744627400089E36 /* Default.png in Resources */,
+				E63302741744627400089E36 /* Default@2x.png in Resources */,
+				E63302761744627400089E36 /* Default-568h@2x.png in Resources */,
+				E633027E174462F700089E36 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E633025D1744627400089E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E633026C1744627400089E36 /* main.m in Sources */,
+				E63302701744627400089E36 /* AppDelegate.m in Sources */,
+				E63302811744636500089E36 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6B4506517442BE400E75E72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,7 +270,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E633027B1744628100089E36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6B4506817442BE400E75E72 /* DMPagingScrollView */;
+			targetProxy = E633027A1744628100089E36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E63302681744627400089E36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63302691744627400089E36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		E63302771744627400089E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMPagingScrollViewTest/DMPagingScrollViewTest-Prefix.pch";
+				INFOPLIST_FILE = "DMPagingScrollViewTest/DMPagingScrollViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E63302781744627400089E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMPagingScrollViewTest/DMPagingScrollViewTest-Prefix.pch";
+				INFOPLIST_FILE = "DMPagingScrollViewTest/DMPagingScrollViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		E6B4507517442BE400E75E72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -170,7 +343,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -193,7 +366,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -207,7 +380,9 @@
 				GCC_PREFIX_HEADER = "DMPagingScrollView/DMPagingScrollView-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -219,13 +394,23 @@
 				GCC_PREFIX_HEADER = "DMPagingScrollView/DMPagingScrollView-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E63302791744627400089E36 /* Build configuration list for PBXNativeTarget "DMPagingScrollViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63302771744627400089E36 /* Debug */,
+				E63302781744627400089E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E6B4506417442BE400E75E72 /* Build configuration list for PBXProject "DMPagingScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -242,6 +427,7 @@
 				E6B4507917442BE400E75E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
