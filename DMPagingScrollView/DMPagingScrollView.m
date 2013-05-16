@@ -200,7 +200,7 @@ static inline BOOL IsSelectorPartOfScrollViewDelegate(SEL aSelector) {
 	CGFloat lowerIndex = floorf(index);
 	CGFloat upperIndex = ceilf(index);
 	
-	if (ABS(dragDisplacement) < DRAG_DISPLACEMENT_THRESHOLD) {
+	if (ABS(dragDisplacement) < DRAG_DISPLACEMENT_THRESHOLD || dragDisplacement * dragVelocity < 0) {
 		if (index - lowerIndex > upperIndex - index) {
 			index = upperIndex;
 		} else {
