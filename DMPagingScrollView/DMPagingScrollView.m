@@ -188,6 +188,10 @@ static inline BOOL IsSelectorPartOfScrollViewDelegate(SEL aSelector) {
 }
 
 - (CGFloat)pageOffsetForComponent:(BOOL)isX {
+	if (((isX ? CGRectGetWidth(self.bounds) : CGRectGetHeight(self.bounds)) == 0) || ((isX ? self.contentSize.width : self.contentSize.height) == 0))
+		return 0;
+	
+	
 	CGFloat pageLength = isX ? _pageWidth : _pageHeight;
 	
 	if (pageLength < FLT_EPSILON)
