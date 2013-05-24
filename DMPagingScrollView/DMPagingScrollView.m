@@ -29,11 +29,6 @@
 #define DRAG_DISPLACEMENT_THRESHOLD 20
 
 
-@interface DMPagingScrollView () <UIScrollViewDelegate>
-
-@end
-
-
 @implementation DMPagingScrollView {
 	// Delegate caching
 	BOOL _delegateRespondsToWillBeginDragging;

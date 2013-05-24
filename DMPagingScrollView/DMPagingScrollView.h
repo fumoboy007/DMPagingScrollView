@@ -23,7 +23,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DMPagingScrollView : UIScrollView
+@interface DMPagingScrollView : UIScrollView <UIScrollViewDelegate>
 
 // The width, in points, of each page. Set to a non-positive number to use the view's width. Default is 0.
 @property (nonatomic) CGFloat pageWidth;
