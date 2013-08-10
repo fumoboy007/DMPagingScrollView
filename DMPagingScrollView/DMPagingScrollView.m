@@ -161,6 +161,18 @@ static inline BOOL IsSelectorPartOfScrollViewDelegate(SEL aSelector) {
 		[self snapToPage];
 }
 
+- (void)setPageHeight:(CGFloat)pageHeight {
+	if (pageHeight == _pageHeight)
+		return;
+	
+	
+	_pageHeight = pageHeight;
+	
+	
+	if (_pagingEnabled)
+		[self snapToPage];
+}
+
 #pragma mark - Paging support
 
 - (void)snapToPage {
