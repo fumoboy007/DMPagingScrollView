@@ -93,11 +93,6 @@
 	_actualDelegate = delegate;
 	
 	
-	// Account for any caching that UIScrollView may perform
-	[super setDelegate:nil];
-	[super setDelegate:self];
-	
-	
 	// Do our own caching
 	_delegateRespondsToWillBeginDragging = [_actualDelegate respondsToSelector:@selector(scrollViewWillBeginDragging:)];
 	_delegateRespondsToWillEndDragging = [_actualDelegate respondsToSelector:@selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:)];
@@ -105,32 +100,6 @@
 	_delegateRespondsToDidEndDecelerating = [_actualDelegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)];
 	_delegateRespondsToDidEndScrollingAnimation = [_actualDelegate respondsToSelector:@selector(scrollViewDidEndScrollingAnimation:)];
 	_delegateRespondsToDidEndZooming = [_actualDelegate respondsToSelector:@selector(scrollViewDidEndZooming:withView:atScale:)];
-}
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-	if (_actualDelegate && IsSelectorPartOfScrollViewDelegate([anInvocation selector])) {
-		[anInvocation invokeWithTarget:_actualDelegate];
-	} else {
-		[super forwardInvocation:anInvocation];
-	}
-}
-
-- (BOOL)respondsToSelector:(SEL)aSelector {
-	BOOL respondsToSelector = [super respondsToSelector:aSelector];
-	
-	if (!respondsToSelector) {
-		if (_actualDelegate && IsSelectorPartOfScrollViewDelegate(aSelector))
-			respondsToSelector = [_actualDelegate respondsToSelector:aSelector];
-	}
-	
-	return respondsToSelector;
-}
-
-static inline BOOL IsSelectorPartOfScrollViewDelegate(SEL aSelector) {
-	struct objc_method_description optionalMethodDescription = protocol_getMethodDescription(@protocol(UIScrollViewDelegate), aSelector, NO, YES);
-	struct objc_method_description requiredMethodDescription = protocol_getMethodDescription(@protocol(UIScrollViewDelegate), aSelector, YES, YES);
-	
-	return optionalMethodDescription.name != NULL || requiredMethodDescription.name != NULL;
 }
 
 #pragma mark - Configuration
@@ -271,11 +240,10 @@ static inline BOOL IsSelectorPartOfScrollViewDelegate(SEL aSelector) {
 		_dragVelocity = velocity;
 		
 		_dragDisplacement = CGPointMake(scrollView.contentOffset.x - _dragDisplacement.x, scrollView.contentOffset.y - _dragDisplacement.y);
+	} else {
+		if (_delegateRespondsToWillEndDragging)
+			[_actualDelegate scrollViewWillEndDragging:scrollView withVelocity:velocity targetContentOffset:targetContentOffset];
 	}
-	
-	
-	if (!_pagingEnabled && _delegateRespondsToWillEndDragging)
-		[_actualDelegate scrollViewWillEndDragging:scrollView withVelocity:velocity targetContentOffset:targetContentOffset];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
